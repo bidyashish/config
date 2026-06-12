@@ -1,0 +1,52 @@
+tap "stripe/stripe-cli"
+
+# Shells / multiplexers / prompt
+brew "fish"
+brew "tmux"
+brew "starship"   # cross-shell prompt — init wired up in fish/config.fish
+
+# Editor
+brew "neovim"     # $EDITOR (fish config falls back to vim when missing)
+
+# Git & GitHub
+brew "gh"
+brew "git-filter-repo"
+brew "lazygit"
+
+# Modern CLI replacements (daily drivers)
+brew "fzf"        # fuzzy finder — pipes to anything
+brew "ripgrep"    # `rg` — fast grep
+brew "fd"         # fast, friendly find
+brew "bat"        # `cat` with syntax highlighting and paging
+brew "eza"        # modern `ls` (maintained successor to exa)
+brew "zoxide"     # smart `cd` that learns
+brew "jq"         # JSON swiss-army knife
+
+# Per-directory env vars
+brew "direnv"
+
+# Quick docs
+brew "tldr"
+
+# Languages / runtimes
+brew "python@3.13"   # system python — most projects use uv-managed versions instead
+brew "uv"            # fast Python pkg + project + venv + version manager (Astral)
+brew "pipx"          # install Python CLIs globally in isolated envs
+brew "rustup"
+
+# AI / ML
+brew "hf"
+brew "llama.cpp"
+
+# Media
+brew "ffmpeg"
+brew "yt-dlp"
+
+# Ops
+brew "mactop"
+
+# Stripe
+brew "stripe/stripe-cli/stripe"
+
+# GUI apps
+cask "docker-desktop"

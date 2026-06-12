@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1",
+    "CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING": "1",
+    "MAX_THINKING_TOKENS": "0"
+  },
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "includeGitInstructions": false,
+  "permissions": {
+    "deny": [
+      "Task"
+    ]
+  },
+  "disableBundledSkills": true,
+  "disableAllHooks": true,
+  "disableAgentView": true,
+  "disableWorkflows": true,
+  "enabledPlugins": {},
+  "spinnerTipsEnabled": false,
+  "effortLevel": "low",
+  "skipDangerousModePermissionPrompt": true
+}
