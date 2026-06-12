@@ -22,6 +22,6 @@
   "disableWorkflows": true,
   "enabledPlugins": {},
   "spinnerTipsEnabled": false,
-  "effortLevel": "low",
+  "effortLevel": "xhigh",
   "skipDangerousModePermissionPrompt": true
 }

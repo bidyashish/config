@@ -8,11 +8,11 @@ Global settings for [Claude Code](https://claude.com/claude-code). Per-project s
 
 ## What's set
 
-A deliberately lean profile: cheap, fast, no extra machinery. Bump effort per session when a task needs it (`/effort`).
+A deliberately lean profile — no extra machinery — with reasoning effort maxed out. Drop effort per session when speed matters more (`/effort`).
 
 | Key                                   | Value      | Why                                                            |
 | ------------------------------------- | ---------- | --------------------------------------------------------------- |
-| `effortLevel`                         | `low`      | Cheap + fast default — raise per session with `/effort`          |
+| `effortLevel`                         | `xhigh`    | Max reasoning by default — drop per session with `/effort`       |
 | `permissions.deny`                    | `["Task"]` | No subagents — keep all work in the main loop                    |
 | `disableBundledSkills` / `disableAllHooks` / `disableWorkflows` / `disableAgentView` | `true` | No bundled skills, hooks, workflows, or agent view |
 | `enabledPlugins`                      | `{}`       | No plugins                                                       |

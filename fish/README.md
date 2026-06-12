@@ -93,6 +93,7 @@ fish_config             # web UI for colors / prompt / functions
 | `lg`               | `lazygit` (abbreviation)                                          |
 | `..` / `...`       | `cd ..` / `cd ../..` (abbreviations)                              |
 | `ls` / `ll` / `lt` | `eza` / `eza -la --git` / `eza --tree --level=2` (when installed) |
+| `cat`              | `bat --paging=never` — syntax highlighting (when installed)       |
 
 `$EDITOR` is `nvim` when installed, `vim` otherwise — git and everything else inherits it.
 
@@ -103,7 +104,7 @@ fish_config             # web UI for colors / prompt / functions
 | `starship`| fast, informative prompt                      | automatic                      |
 | `zoxide`  | smart `cd` that learns                        | `z <part-of-dir-name>`         |
 | `direnv`  | auto-loads `.envrc` when entering a dir       | `direnv allow` to authorise    |
-| `fzf`     | fuzzy finder over stdin                       | `Ctrl+T` files, `Ctrl+R` history, `Alt+C` cd |
+| `fzf`     | fuzzy finder — searches via `fd`, `bat` preview | `Ctrl+T` files, `Ctrl+R` history, `Alt+C` cd |
 | `nvm`     | node version manager                          | `nvm use 24` (needs `nvm.fish` plugin) |
 
 Each one is guarded by `command -q` in `config.fish` — missing binaries are silently skipped.

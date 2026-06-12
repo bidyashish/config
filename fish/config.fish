@@ -18,12 +18,24 @@ if status is-interactive
     command -q direnv   ; and direnv hook fish | source
     command -q fzf      ; and fzf --fish | source
 
+    # fzf searches via fd when installed: respects .gitignore, finds hidden files
+    if command -q fd
+        set -gx FZF_DEFAULT_COMMAND 'fd --type f --hidden --exclude .git'
+        set -gx FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
+        set -gx FZF_ALT_C_COMMAND 'fd --type d --hidden --exclude .git'
+    end
+    # bat preview in the Ctrl+T file picker
+    command -q bat ; and set -gx FZF_CTRL_T_OPTS "--preview 'bat --color=always --line-range :200 {}'"
+
     # eza as ls when installed
     if command -q eza
         alias ls 'eza'
         alias ll 'eza -la --git'
         alias lt 'eza --tree --level=2'
     end
+
+    # bat as cat when installed (--paging=never keeps it cat-like)
+    command -q bat ; and alias cat 'bat --paging=never'
 
     # Abbreviations — expand on space so you always see the real command
     abbr -a g git

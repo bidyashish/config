@@ -37,8 +37,8 @@ config/
 ## What's in here
 
 - **tmux** — `Ctrl+Space` prefix, mouse on, truecolor, 50k scrollback, windows numbered from 1, `|`/`_` splits that open in the current directory, vim-style pane nav (`h/j/k/l`) and copy mode, `Alt+←/→` to cycle windows, `prefix r` to reload.
-- **fish** — adds `~/.local/bin` to `PATH`, sets `$EDITOR` (nvim, falling back to vim), auto-inits `starship`/`zoxide`/`direnv`/`fzf` when present, `eza` ls aliases, `g`/`lg`/`..`/`...` abbreviations, integrates `nvm` (see Node below), plus a `killport <port>` helper.
-- **claude** — global Claude Code settings: a lean profile — non-essential traffic off, extended thinking off, `effortLevel: low`, subagents (`Task`) denied, hooks/skills/workflows disabled, no commit attribution (see [claude/README.md](claude/README.md)).
+- **fish** — adds `~/.local/bin` to `PATH`, sets `$EDITOR` (nvim, falling back to vim), auto-inits `starship`/`zoxide`/`direnv`/`fzf` when present, fzf search backed by `fd` with a `bat` preview on `Ctrl+T`, `eza` ls aliases, `bat` as `cat`, `g`/`lg`/`..`/`...` abbreviations, integrates `nvm` (see Node below), plus a `killport <port>` helper.
+- **claude** — global Claude Code settings: a lean profile — non-essential traffic off, extended thinking off, `effortLevel: xhigh`, subagents (`Task`) denied, hooks/skills/workflows disabled, no commit attribution (see [claude/README.md](claude/README.md)).
 - **git** — opinionated defaults (`pull.rebase`, `push.autoSetupRemote`, `init.defaultBranch=main`, `fetch.prune`, `rerere.enabled`, `diff.algorithm=histogram`, `merge.conflictStyle=zdiff3`, `branch.sort=-committerdate`, `commit.verbose`) plus aliases (`st`, `co`, `br`, `lg`, `last`, `undo`, `amend`, `pushf`, `wip`, `cleanup`). Editor comes from `$EDITOR` (set by fish). Global ignore covers macOS junk, `node_modules`, `.venv`, `target/`, `.env`, editor artefacts.
 - **zed** — fish as terminal shell, AI disabled, left-docked project panel, One Dark theme.
 - **node** — `default-version` file (currently `24`) — used as the `nvm install <version>` target.

@@ -1,4 +1,4 @@
-tap "stripe/stripe-cli"
+tap "stripe/stripe-cli", trusted: true
 
 # Shells / multiplexers / prompt
 brew "fish"
