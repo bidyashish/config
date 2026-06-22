@@ -23,5 +23,7 @@
   "enabledPlugins": {},
   "spinnerTipsEnabled": false,
   "effortLevel": "xhigh",
-  "skipDangerousModePermissionPrompt": true
+  "skipDangerousModePermissionPrompt": true,
+  "verbose": true,
+  "autoCompactEnabled": true
 }
