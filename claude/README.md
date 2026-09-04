@@ -2,6 +2,17 @@
 
 Global settings for [Claude Code](https://claude.com/claude-code). Per-project settings live in each repo's `.claude/` directory and override these.
 
+# Installation
+- Version 2.1.247
+```
+curl -fsSL https://claude.ai/install.sh | bash -s 2.1.247
+```
+
+# Uninstall
+```
+rm -f ~/.local/bin/claude
+rm -rf ~/.local/share/claude
+```
 ## Files
 
 - `settings.json` → `~/.claude/settings.json`
